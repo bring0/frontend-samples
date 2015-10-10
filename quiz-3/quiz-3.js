@@ -1,6 +1,10 @@
 
 function sortWords(sentence) {
-
+    var arr = sentence.split(" ");
+    arr.sort(function (a, b) {
+        return a.length - b.length; // could also use a.length > b.length
+    });
+    return arr.join(' ');
 }
 
 console.log(sortWords("The quick brown fox jumped over the lazy dog"));

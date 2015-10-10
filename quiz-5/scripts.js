@@ -1,21 +1,30 @@
+var theAlphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
-var something;
-setTimeout(function() {
-    // I don't know why but "something" doesn't work unless i put setTimeout around it!!1! @_@
-    something = $($('#results-template').text());
-}, 100);
+function letterExists (stringToTest) {
+    stringToTest = stringToTest.toUpperCase();
+    return function(letr) {
+        return stringToTest.indexOf(letr) > -1;
+    }
+}
+function processAllLetters(stringToProcess) {
+    return theAlphabet.every(letterExists(stringToProcess));  		//.every() breaks on false
+}
 
-$(document).ready(function($) {
+$( document ).ready(function() {
+        $("#submitButton").click(function(event) {
+        	event.preventDefault();
 
-$('form').on('submit', function() {
 
-var anotherSomething = something.clone();
-anotherSomething.find('p.input').text($('form input[name=sentence]').val());
+        	var entryText = $("#sentence").val();
 
-        $('#results').prepend(anotherSomething);
+        	var panagramText = processAllLetters(entryText) ? 'This sentence is a panagram!' : 'This sentence is not a panagram!';
+        	$("#sentence").val("");
+        	$("#resultArea").removeClass("hideMe");
+        	$("#results").loadTemplate($("#results-template"),
+        	    {
+        	        entry: entryText,
+        	        isPanagramOrNot: panagramText
+        	    }, {prepend: true});
 
-          $('form input[name=sentenc]').val('');
-
-        return false;
+        });
     });
-});

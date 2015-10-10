@@ -5,7 +5,9 @@ function User(name) {
 
 // Write your code here:
 // ---------------------
-
+User.prototype.sayName = function () {
+	return console.log("Hello, my name is " + this.name + "!");
+}
 // ---------------------
 
 var user1 = new User("Harry");
