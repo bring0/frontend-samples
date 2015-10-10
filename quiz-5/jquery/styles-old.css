@@ -1,0 +1,41 @@
+
+body {font-family: sans-serif}
+#wrapper {
+    width:550px;
+    margin: 0 auto
+}
+
+h1 { color : #6699FF; margin  :50px 0;
+}
+
+form {
+    margin-bottom:40px}
+
+form input[type=text] {
+    display: inline-block;
+padding:0 5px;
+height:30px;
+line-height: 30px;
+font-size : 14pt;
+width:500px;
+}
+
+form input[type=submit] { height: 30px;
+    display:inline-block;
+
+
+
+
+        border: none;
+    color: white;
+}
+
+#results .result {
+background: #EEE;
+padding:10px;
+margin-bottom: 20px;
+}
+
+#results .result p.input
+{  font-weight: bold
+}
