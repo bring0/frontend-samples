@@ -1,0 +1,11 @@
+{
+  "name": "frontend-samples",
+  "description": "Responses for Commerce House Front-End Developer Quiz",
+  "homepage": "https://github.com/bring0/frontend-samples",
+  "version": "1.1.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+  }
+}
