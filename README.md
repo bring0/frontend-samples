@@ -1,10 +1,10 @@
 
 # Commerce House Front-End Developer Quiz
 
-*[Quiz-5 Live Demo](http://bring0.com/quiz-5/ "Quiz-5 Live Demo")
+[Quiz-5 Live Demo](http://bring0.com/quiz-5/ "Quiz-5 Live Demo")
 
 
-*[Résumé - Brendan Ring](http://bring0.com/BrendanR.pdf "Brendan Ring Resume")
+[Résumé - Brendan Ring](http://bring0.com/BrendanR.pdf "Brendan Ring Resume")
 
 ######Thanks for your consideration! 
 
